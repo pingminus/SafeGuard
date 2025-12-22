@@ -95,32 +95,32 @@ Supported ciphers:
 Encrypt a file:
 
 ```bash
-encrypter secret.txt e aes-256 --key "your-strong-password"
+encrypter secret.txt e aes --key "your-strong-password"
 # or
-encrypter secret.txt --encrypt aes-256 --key "your-strong-password" --output secret.txt.aes
+encrypter secret.txt --encrypt aes --key "your-strong-password" --output secret.txt.aes
 ```
 
 Decrypt a file:
 
 ```bash
-./safeguard secret.txt d aes-256 --key "your-strong-password"
+./safeguard secret.txt d aes --key "your-strong-password"
 # or
-./safeguard secret.txt --decrypt aes-256 --key "your-strong-password" --output secret.txt.dec
+./safeguard secret.txt --decrypt aes --key "your-strong-password" --output secret.txt.dec
 ```
 
 ---
 
 ## More Examples
 
-- Encrypt with AES-256 and write in place:
+- Encrypt with AES and write in place:
 
 ```bash
-./safeguard secrets.txt e aes-256 --key "123123123123123123123123" --inplace
+./safeguard secrets.txt e aes --key "123123123123123123123123" --inplace
 # -> creates secrets.txt but encrypted
 ```
 
-- Decrypt with AES-256 and specify output file :
+- Decrypt with AES and specify output file :
 
 ```bash
-./safeguard secrets.txt.aes d aes-256 --key "123123123123123123123123" --output secrets_decrypted.txt
+./safeguard secrets.txt.aes d aes --key "123123123123123123123123" --output secrets_decrypted.txt
 ```
