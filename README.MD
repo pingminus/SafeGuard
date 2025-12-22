@@ -53,9 +53,9 @@ Contributions that improve security while preserving usability are welcome.
 ### Build (req. Go)
 
 ```bash
-git clone https://github.com/pingplus/safeguard.git
-cd safeguard
-go build -o encrypter
+git clone https://github.com/pingplus/SafeGuard.git
+cd SafeGuard
+go build
 ```
 
 ## Usage
