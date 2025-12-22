@@ -3,7 +3,7 @@
 </div>
 
 ```bash
-./safeguard --Version
+./safeguard --version
 1.0
 ```
 
