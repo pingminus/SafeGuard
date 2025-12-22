@@ -7,6 +7,12 @@
 1.0
 ```
 
+<br>
+<div align="center">
+  <img src="static/image.png" alt="Safeguard-Terminal" width="600">
+</div>
+<br>
+<br>
 Safeguard is a fast, lightweight, cross-platform command-line file encryption tool written in Go.
 
 ---
@@ -82,7 +88,7 @@ Decrypt a file:
 
 ---
 
-## Examples
+## More Examples
 
 - Encrypt with AES-256 and write in place:
 
