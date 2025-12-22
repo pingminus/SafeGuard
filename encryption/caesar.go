@@ -34,7 +34,6 @@ func caesarFile(inputFile string, shift int, outputFile string) {
 	defer out.Close()
 
 	buffer := make([]byte, 4096)
-
 	for {
 		n, err := in.Read(buffer)
 		if n > 0 {

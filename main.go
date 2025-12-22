@@ -134,7 +134,7 @@ func encryptDirectory(directory string, encrypt bool, cipher string, key string,
 func main() {
 	utils.PrintBanner()
 	utils.InfoCout("Author: pingplus/pingminus")
-	utils.SuccessCout("Encrypter started successfully.")
+	utils.SuccessCout("SafeGuard started successfully.")
 
 	argc := len(os.Args)
 	argv := os.Args
@@ -328,7 +328,7 @@ func main() {
 				utils.ErrorCout("Failed to replace original file: " + err.Error())
 				return
 			}
-			utils.SuccessCout("Replaced original with output file: " + filepath.Base(filename))
+			utils.SuccessCout("Output written to: " + filepath.Base(filename))
 		} else {
 			utils.SuccessCout("Output written to: " + filepath.Base(outputFile))
 		}

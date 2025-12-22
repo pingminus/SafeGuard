@@ -123,7 +123,7 @@ func AES256EncryptFile(inputFile, outputFile, password string) bool {
 		return false
 	}
 
-	utils.SuccessCout("AES streaming encryption completed: " + filepath.Base(outputFile))
+	utils.SuccessCout("AES streaming encryption completed")
 	return true
 }
 
