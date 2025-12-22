@@ -19,16 +19,38 @@ Safeguard is a fast, lightweight, cross-platform command-line file encryption to
 
 ## ⚠️ Security Notice
 
-Safeguard uses **AES-256**, it provides confidentiality and integrity for encrypted files. Short notice:
+This project is a learning-oriented file encryption tool.
 
-- This tool is for convenience/testing — not for protecting high‑value secrets.
-- `--inplace` overwrites originals; back up important files first.
+While it uses standard cryptographic primitives from Go’s standard library
+(e.g. AES-GCM for authenticated encryption), it does **not** use a modern,
+memory-hard password key derivation function such as Argon2 or scrypt.
+
+Instead, keys are derived using a lightweight, standard-library-only method.
+This means:
+
+- The encryption is **secure against casual inspection**
+- Integrity and tampering are **detected**
+- Passwords are **not strongly protected** against determined brute-force or GPU-based attacks
+
+### Do NOT use this tool for:
+
+- High-value secrets
+- Long-term storage of sensitive data
+- Situations requiring strong password-hardening guarantees
+
+### Intended use:
+
+- Learning and experimentation
+- Personal or low-risk file protection
+- Open-source collaboration and improvement
+
+Contributions that improve security while preserving usability are welcome.
 
 ---
 
 ## Installation
 
-### Build req. Go
+### Build (req. Go)
 
 ```bash
 git clone https://github.com/pingplus/safeguard.git
@@ -63,12 +85,12 @@ Supported ciphers:
 [i] Available ciphers:
   xor
   caesar
-  aes-256
+  aes
 ```
 
 ---
 
-## AES-256
+## AES
 
 Encrypt a file:
 

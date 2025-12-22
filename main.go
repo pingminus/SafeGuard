@@ -287,7 +287,7 @@ func main() {
 			encryption.DecryptCaesar(filename, shift, outputFile)
 		}
 
-	case "aes-256":
+	case "aes":
 		if len(key) < 16 {
 			utils.ErrorCout("AES key too short. Minimum 16 characters.")
 			return
