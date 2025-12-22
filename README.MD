@@ -70,7 +70,7 @@ Actions:
 
 - `--encrypt` or `e` Encrypt a file
 - `--decrypt` or `d` Decrypt a file
-- `--decrypt-directory` or `de` Decrypt a whole directory (decrypting directory not available yet)
+- `--decrypt-directory` or `de` Decrypt a whole directory (decrypting directory not available yet sorry :( )
 
 Options:
 
