@@ -95,9 +95,9 @@ Supported ciphers:
 Encrypt a file:
 
 ```bash
-encrypter secret.txt e aes --key "your-strong-password"
+./safeguard secret.txt e aes --key "your-strong-password"
 # or
-encrypter secret.txt --encrypt aes --key "your-strong-password" --output secret.txt.aes
+./safeguard secret.txt --encrypt aes --key "your-strong-password" --output secret.txt.aes
 ```
 
 Decrypt a file:
