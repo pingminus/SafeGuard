@@ -134,7 +134,7 @@ func encryptDirectory(directory string, encrypt bool, cipher string, key string,
 func main() {
 	utils.PrintBanner()
 	utils.InfoCout("Author: pingplus/pingminus")
-	utils.SuccessCout("SafeGuard started successfully.")
+	utils.SuccessCout("SafeGuard started successfully")
 
 	argc := len(os.Args)
 	argv := os.Args
