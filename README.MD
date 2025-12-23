@@ -17,7 +17,7 @@ Safeguard is a fast, lightweight, cross-platform command-line file encryption to
 
 ---
 
-## ⚠️ Security Notice
+##  Security Notice
 
 This project is a learning-oriented file encryption tool.
 
