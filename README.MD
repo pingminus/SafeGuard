@@ -110,7 +110,7 @@ Decrypt a file:
 
 ---
 
-## More Examples
+## More 
 
 - Encrypt with AES and write in place:
 
